@@ -11,9 +11,9 @@ pipeline {
                 sh 'mvn -B -DskipTests clean package'
             }
         }
-	stage('Test') {
+        stage('Test') {
             steps {
-                sh './jenkins/scripts/test.sh'
+                sh 'mvn test'
             }
             post {
                 always {
@@ -21,10 +21,11 @@ pipeline {
                 }
             }
         }
-	// stage('Deliver') {
- //            steps {
- //                sh './jenkins/scripts/deliver.sh'
- //            }
- //        }
+        stage('Deliver') {
+            steps {
+                sh './jenkins/scripts/deliver.sh'
+                input 'Finished using the web site? (Click "Proceed" to continue)'
+            }
+        }
     }
 }
