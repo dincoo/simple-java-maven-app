@@ -28,7 +28,7 @@
 
   <meta name="viewport" content="width=device-width">
   
-  <title>creating-a-pipeline-in-blue-ocean/deliver.sh at master · jenkins-docs/creating-a-pipeline-in-blue-ocean</title>
+  <title>creating-a-pipeline-in-blue-ocean/test.sh at master · jenkins-docs/creating-a-pipeline-in-blue-ocean</title>
     <meta name="description" content="For an introductory tutorial on how to use the Blue Ocean feature of Jenkins to create a Pipeline that builds an application. - jenkins-docs/creating-a-pipeline-in-blue-ocean">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
   <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
@@ -38,10 +38,10 @@
     <meta property="og:image" content="https://avatars2.githubusercontent.com/u/24830755?s=400&amp;v=4" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="jenkins-docs/creating-a-pipeline-in-blue-ocean" /><meta property="og:url" content="https://github.com/jenkins-docs/creating-a-pipeline-in-blue-ocean" /><meta property="og:description" content="For an introductory tutorial on how to use the Blue Ocean feature of Jenkins to create a Pipeline that builds an application. - jenkins-docs/creating-a-pipeline-in-blue-ocean" />
 
   <link rel="assets" href="https://github.githubassets.com/">
-  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6NDM3MDYzMjAyOmJjMmJjNmUyYjcwM2M5NTc0ODdkYzI0ZTQxOWFkNTY0ZGEzMDY1YTJlYjMyNDNlOTRiZDM4NDJlMjhiOWIyMWE=--508ec2dcf093719822f08734af7591c55fe4ed63">
+  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6NDM3MDYzMjAyOmI4NTM3YzMzMTlmZTBiNjE5MzU1Y2NmNGRlOTY0NTdjM2JlNmYzMzcxZTJlMzhmZDJhMDNmZmNlNzg3Yjc0OTQ=--e44da60f53253638db8e16d484da23dd588d8ecc">
   <meta name="pjax-timeout" content="1000">
   <link rel="sudo-modal" href="/sessions/sudo_modal">
-  <meta name="request-id" content="796D:7879:7D3390:B2F6A8:5D78C0C3" data-pjax-transient>
+  <meta name="request-id" content="796D:7879:7D2EF4:B2EF59:5D78C0B3" data-pjax-transient>
 
 
   
@@ -52,7 +52,7 @@
     <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
     <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
 
-  <meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="796D:7879:7D3390:B2F6A8:5D78C0C3" /><meta name="octolytics-dimension-region_edge" content="ap-southeast-1" /><meta name="octolytics-dimension-region_render" content="iad" /><meta name="octolytics-dimension-ga_id" content="" class="js-octo-ga-id" /><meta name="octolytics-dimension-visitor_id" content="5026848936170875818" /><meta name="octolytics-actor-id" content="907310" /><meta name="octolytics-actor-login" content="dincoo" /><meta name="octolytics-actor-hash" content="47095451ae3517903e925cfe3b2cf47abe7c95902edba9bed0abe190cbaca1cc" />
+  <meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="796D:7879:7D2EF4:B2EF59:5D78C0B3" /><meta name="octolytics-dimension-region_edge" content="ap-southeast-1" /><meta name="octolytics-dimension-region_render" content="iad" /><meta name="octolytics-dimension-ga_id" content="" class="js-octo-ga-id" /><meta name="octolytics-dimension-visitor_id" content="5026848936170875818" /><meta name="octolytics-actor-id" content="907310" /><meta name="octolytics-actor-login" content="dincoo" /><meta name="octolytics-actor-hash" content="47095451ae3517903e925cfe3b2cf47abe7c95902edba9bed0abe190cbaca1cc" />
 <meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" />
 
 
@@ -71,7 +71,7 @@
     <meta name="user-login" content="dincoo">
 
       <meta name="expected-hostname" content="github.com">
-    <meta name="js-proxy-site-detection-payload" content="MmYyMDM3MWRjYTdkM2Q0NWZkYjQxNmI3YWUyMGRhODk2NmU1NTQxYjFhYzY0YmM5M2QyYjczYWQzMzgyNjNlYXx7InJlbW90ZV9hZGRyZXNzIjoiMjE4LjE3LjE1Ny4xNyIsInJlcXVlc3RfaWQiOiI3OTZEOjc4Nzk6N0QzMzkwOkIyRjZBODo1RDc4QzBDMyIsInRpbWVzdGFtcCI6MTU2ODE5NDc2MiwiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
+    <meta name="js-proxy-site-detection-payload" content="YjdkN2ZhNDdmNmZkMjExNjJkZTY1NTY1MmU2ZTVjZTUxMTgyY2MxMWIyYTZmYzRmYmNjNzM2OTJmYjQwYmM5NXx7InJlbW90ZV9hZGRyZXNzIjoiMjE4LjE3LjE1Ny4xNyIsInJlcXVlc3RfaWQiOiI3OTZEOjc4Nzk6N0QyRUY0OkIyRUY1OTo1RDc4QzBCMyIsInRpbWVzdGFtcCI6MTU2ODE5NDc0NywiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
 
     <meta name="enabled-features" content="ACTIONS_V2_ON_MARKETPLACE,MARKETPLACE_FEATURED_BLOG_POSTS,MARKETPLACE_INVOICED_BILLING,MARKETPLACE_SOCIAL_PROOF_CUSTOMERS,MARKETPLACE_TRENDING_SOCIAL_PROOF,MARKETPLACE_RECOMMENDATIONS,MARKETPLACE_PENDING_INSTALLATIONS,NOTIFY_ON_BLOCK,RELATED_ISSUES,GHE_CLOUD_TRIAL">
 
@@ -87,7 +87,7 @@
   <meta name="octolytics-dimension-user_id" content="24830755" /><meta name="octolytics-dimension-user_login" content="jenkins-docs" /><meta name="octolytics-dimension-repository_id" content="109787945" /><meta name="octolytics-dimension-repository_nwo" content="jenkins-docs/creating-a-pipeline-in-blue-ocean" /><meta name="octolytics-dimension-repository_public" content="true" /><meta name="octolytics-dimension-repository_is_fork" content="false" /><meta name="octolytics-dimension-repository_network_root_id" content="109787945" /><meta name="octolytics-dimension-repository_network_root_nwo" content="jenkins-docs/creating-a-pipeline-in-blue-ocean" /><meta name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" content="false" />
 
 
-    <link rel="canonical" href="https://github.com/jenkins-docs/creating-a-pipeline-in-blue-ocean/blob/master/jenkins/scripts/deliver.sh" data-pjax-transient>
+    <link rel="canonical" href="https://github.com/jenkins-docs/creating-a-pipeline-in-blue-ocean/blob/master/jenkins/scripts/test.sh" data-pjax-transient>
 
 
   <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
@@ -159,7 +159,7 @@
           aria-autocomplete="list"
           aria-controls="jump-to-results"
           aria-label="Search or jump to…"
-          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations#csrf-token=qZ5gx59PCRkw8aOOh0BwAqCORBl5W4iKBSAftZK3ozb6f1MApZAdq51hpDMz0ePGoI0foZjCnWd0vX1FzGSOrg=="
+          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations#csrf-token=RCwPxjtdps1gmNIP9P9IxknWfw0hFFdgqVKdJSJaZj4XzTwBAYKyf80I1bJAbtsCSdUktcCNQo3Yz//VfIlLpg=="
           spellcheck="false"
           autocomplete="off"
           >
@@ -312,7 +312,7 @@
       <img class="avatar" height="20" width="20" alt="@dincoo" src="https://avatars3.githubusercontent.com/u/907310?s=60&amp;v=4" />
       dincoo
 </a>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="U7OzNhlnDCNV3XDeUvj9FnWZAb9BaexfRczMYIBsOHDXigNHNVA81opE/JBMn7XMrOlxhcJsjJXHBIdQirpELQ==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="efEK0U+6KDxmMOHRF6SqWS2BzzJPuUS//t4NSpkN/YH9yLqgY40YybmpbZ8Jw+KD9PG/CMy8JHV8FkZ6k9uB3A==" />
       <button type="submit" class="Header-link mr-0 mr-lg-3 py-2 py-lg-0 border-top border-lg-top-0 border-white-fade-15 d-lg-none btn-link d-block width-full text-left" data-ga-click="Header, sign out, icon:logout" style="padding-left: 2px;">
         <svg class="octicon octicon-sign-out v-align-middle" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 9V7H8V5h4V3l4 3-4 3zm-2 3H6V3L2 1h8v3h1V1c0-.55-.45-1-1-1H1C.45 0 0 .45 0 1v11.38c0 .39.22.73.55.91L6 16.01V13h4c.55 0 1-.45 1-1V8h-1v4z"/></svg>
         Sign out
@@ -404,7 +404,7 @@
   " data-team-hovercards-enabled>
   <details class="js-user-status-details details-reset details-overlay details-overlay-dark">
     <summary class="btn-link btn-block link-gray no-underline js-toggle-user-status-edit toggle-user-status-edit "
-      role="menuitem" data-hydro-click="{&quot;event_type&quot;:&quot;user_profile.click&quot;,&quot;payload&quot;:{&quot;profile_user_id&quot;:24830755,&quot;target&quot;:&quot;EDIT_USER_STATUS&quot;,&quot;user_id&quot;:907310,&quot;client_id&quot;:&quot;1170404473.1543760810&quot;,&quot;originating_request_id&quot;:&quot;796D:7879:7D3390:B2F6A8:5D78C0C3&quot;,&quot;originating_url&quot;:&quot;https://github.com/jenkins-docs/creating-a-pipeline-in-blue-ocean/blob/master/jenkins/scripts/deliver.sh&quot;,&quot;referrer&quot;:&quot;https://github.com/jenkins-docs/creating-a-pipeline-in-blue-ocean/tree/master/jenkins/scripts&quot;}}" data-hydro-click-hmac="687c03cbc66f480f794259a800d6da046d2c57f7a08cb2bdf658db19eb4a305e">
+      role="menuitem" data-hydro-click="{&quot;event_type&quot;:&quot;user_profile.click&quot;,&quot;payload&quot;:{&quot;profile_user_id&quot;:24830755,&quot;target&quot;:&quot;EDIT_USER_STATUS&quot;,&quot;user_id&quot;:907310,&quot;client_id&quot;:&quot;1170404473.1543760810&quot;,&quot;originating_request_id&quot;:&quot;796D:7879:7D2EF4:B2EF59:5D78C0B3&quot;,&quot;originating_url&quot;:&quot;https://github.com/jenkins-docs/creating-a-pipeline-in-blue-ocean/blob/master/jenkins/scripts/test.sh&quot;,&quot;referrer&quot;:&quot;https://github.com/jenkins-docs/creating-a-pipeline-in-blue-ocean/tree/master/jenkins/scripts&quot;}}" data-hydro-click-hmac="cce3a079cff9f93528816f9264af819fd3cfbaab36cc4255a80c7c4d98216a94">
       <div class="d-flex">
         <div class="f6 lh-condensed user-status-header
           d-inline-block v-align-middle
@@ -431,7 +431,7 @@
       </div>
     </summary>
     <details-dialog class="details-dialog rounded-1 anim-fade-in fast Box Box--overlay" role="dialog" tabindex="-1">
-      <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="position-relative flex-auto js-user-status-form" action="/users/status?compact=1&amp;link_mentions=0&amp;truncate=1" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="mpPvIK+vhB5GlPJyvRlTA9i8zRPzQU/8mK/wdk/QA/D0Nycbg4ybBC3360ePU4hZakglschADYOV24ySmcmb+Q==" />
+      <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="position-relative flex-auto js-user-status-form" action="/users/status?compact=1&amp;link_mentions=0&amp;truncate=1" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="lBV5DYf0w+iz9F2q45Yx2KhylNsQhrXZX/wrdT0giff6sbE2q9fc8tiXRJ/R3OqCGoZ8eSuH96ZSiFeR6zkR/g==" />
         <div class="Box-header bg-gray border-bottom p-3">
           <button class="Box-btn-octicon js-toggle-user-status-edit btn-octicon float-right" type="reset" aria-label="Close dialog" data-close-dialog>
             <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
@@ -551,17 +551,17 @@
       </li>
       <li class="dropdown-divider" role="none"></li>
         <li>
-          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 30 minutes" value="2019-09-11T18:09:22+08:00">
+          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 30 minutes" value="2019-09-11T18:09:07+08:00">
             in 30 minutes
           </button>
         </li>
         <li>
-          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 1 hour" value="2019-09-11T18:39:22+08:00">
+          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 1 hour" value="2019-09-11T18:39:07+08:00">
             in 1 hour
           </button>
         </li>
         <li>
-          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 4 hours" value="2019-09-11T21:39:22+08:00">
+          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 4 hours" value="2019-09-11T21:39:07+08:00">
             in 4 hours
           </button>
         </li>
@@ -612,7 +612,7 @@
     <div role="none" class="dropdown-divider"></div>
     <a role="menuitem" class="dropdown-item" href="https://help.github.com" data-ga-click="Header, go to help, text:help">Help</a>
     <a role="menuitem" class="dropdown-item" href="/settings/profile" data-ga-click="Header, go to settings, icon:settings">Settings</a>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="gTGQn0Kh21THKVN4NVWZciXWVk6sAWKdJRf6gRjkBIgFCCDubpbroRiw3zYrMtGo/KYmdC8EAlen37GxEjJ41Q==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="iV8vrs7YgZleOBMYkqkADjD+FhAehMNRy9Vr5MmhN9QNZp/f4u+xbIGhn1aMzkjU6Y5mKp2Bo5tJHSDUw3dLiQ==" />
       
       <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout" role="menuitem">
         Sign out
@@ -652,10 +652,10 @@
       <p class="shelf-lead">
           Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
       </p>
-      <a class="btn btn-primary shelf-cta" target="_blank" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;READ_GUIDE&quot;,&quot;repository_id&quot;:109787945,&quot;client_id&quot;:&quot;1170404473.1543760810&quot;,&quot;originating_request_id&quot;:&quot;796D:7879:7D3390:B2F6A8:5D78C0C3&quot;,&quot;originating_url&quot;:&quot;https://github.com/jenkins-docs/creating-a-pipeline-in-blue-ocean/blob/master/jenkins/scripts/deliver.sh&quot;,&quot;referrer&quot;:&quot;https://github.com/jenkins-docs/creating-a-pipeline-in-blue-ocean/tree/master/jenkins/scripts&quot;,&quot;user_id&quot;:907310}}" data-hydro-click-hmac="6a3384b86554f155dc33783399c5017c3bd805099ead91e573d85782b8db7361" href="https://guides.github.com/activities/hello-world/">Read the guide</a>
+      <a class="btn btn-primary shelf-cta" target="_blank" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;READ_GUIDE&quot;,&quot;repository_id&quot;:109787945,&quot;client_id&quot;:&quot;1170404473.1543760810&quot;,&quot;originating_request_id&quot;:&quot;796D:7879:7D2EF4:B2EF59:5D78C0B3&quot;,&quot;originating_url&quot;:&quot;https://github.com/jenkins-docs/creating-a-pipeline-in-blue-ocean/blob/master/jenkins/scripts/test.sh&quot;,&quot;referrer&quot;:&quot;https://github.com/jenkins-docs/creating-a-pipeline-in-blue-ocean/tree/master/jenkins/scripts&quot;,&quot;user_id&quot;:907310}}" data-hydro-click-hmac="451eafbd66e5c68829cf0a260c6456781243fcd7e742c6009fb6f6c9ccc56526" href="https://guides.github.com/activities/hello-world/">Read the guide</a>
     </div>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="shelf-dismiss js-notice-dismiss" action="/dashboard/dismiss_bootcamp" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="delete" /><input type="hidden" name="authenticity_token" value="s16UUIga+NyF+hY5OWul9fDGKhLCi2HNmQPlMkq+GTpxmku8FfUzJzREAD0ishPJv2hxPTzUBMpVbEXNZ+XUPA==" />
-      <button name="button" type="submit" class="mr-1 close-button tooltipped tooltipped-w" aria-label="Hide this notice forever" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;DISMISS_BANNER&quot;,&quot;repository_id&quot;:109787945,&quot;client_id&quot;:&quot;1170404473.1543760810&quot;,&quot;originating_request_id&quot;:&quot;796D:7879:7D3390:B2F6A8:5D78C0C3&quot;,&quot;originating_url&quot;:&quot;https://github.com/jenkins-docs/creating-a-pipeline-in-blue-ocean/blob/master/jenkins/scripts/deliver.sh&quot;,&quot;referrer&quot;:&quot;https://github.com/jenkins-docs/creating-a-pipeline-in-blue-ocean/tree/master/jenkins/scripts&quot;,&quot;user_id&quot;:907310}}" data-hydro-click-hmac="7d898c77269f9336714e6e95a940947b64ce08743736f7c5f096ad0765f382d4">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="shelf-dismiss js-notice-dismiss" action="/dashboard/dismiss_bootcamp" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="delete" /><input type="hidden" name="authenticity_token" value="Dwrt7/MUyIlXc8/tSDQol2+xzbULnxu7zjxKgXJJCRnNzjIDbvsDcubN2elT7Z6rIB+WmvXAfrwCU+p+XxLEHw==" />
+      <button name="button" type="submit" class="mr-1 close-button tooltipped tooltipped-w" aria-label="Hide this notice forever" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;DISMISS_BANNER&quot;,&quot;repository_id&quot;:109787945,&quot;client_id&quot;:&quot;1170404473.1543760810&quot;,&quot;originating_request_id&quot;:&quot;796D:7879:7D2EF4:B2EF59:5D78C0B3&quot;,&quot;originating_url&quot;:&quot;https://github.com/jenkins-docs/creating-a-pipeline-in-blue-ocean/blob/master/jenkins/scripts/test.sh&quot;,&quot;referrer&quot;:&quot;https://github.com/jenkins-docs/creating-a-pipeline-in-blue-ocean/tree/master/jenkins/scripts&quot;,&quot;user_id&quot;:907310}}" data-hydro-click-hmac="5be1d1e388f7c29059077f893227a6311a2d9fc93bae958abc95089a788ab304">
         <svg aria-label="Hide this notice forever" class="octicon octicon-x v-align-text-top" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
 </button></form>  </div>
 </div>
@@ -681,10 +681,10 @@
 
   <li>
     
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" class="clearfix js-social-form js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="74FLoF6V32sK4E4SKmHy6E3BPxj7+P0Ki57nH/21L16Un4RzIBCWu3eupi6eeN22dzoCfokuei3WEBsAwRqjfw==" />      <input type="hidden" name="repository_id" value="109787945">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" class="clearfix js-social-form js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="4JIq3yWwGimYvNXiU7Go6pJ5+usLYn5SrT/qPe6lM+ibjOUMWzVT+eXyPd7nqIe0qILHjXm0+XXwsRYi0gq/yQ==" />      <input type="hidden" name="repository_id" value="109787945">
 
       <details class="details-reset details-overlay select-menu float-left">
-        <summary class="select-menu-button float-left btn btn-sm btn-with-count" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;WATCH_BUTTON&quot;,&quot;repository_id&quot;:109787945,&quot;client_id&quot;:&quot;1170404473.1543760810&quot;,&quot;originating_request_id&quot;:&quot;796D:7879:7D3390:B2F6A8:5D78C0C3&quot;,&quot;originating_url&quot;:&quot;https://github.com/jenkins-docs/creating-a-pipeline-in-blue-ocean/blob/master/jenkins/scripts/deliver.sh&quot;,&quot;referrer&quot;:&quot;https://github.com/jenkins-docs/creating-a-pipeline-in-blue-ocean/tree/master/jenkins/scripts&quot;,&quot;user_id&quot;:907310}}" data-hydro-click-hmac="11da397b118ed85bd5b059b184e45a8d7acc9f6efd4df0f654136c69b2aa6b56" data-ga-click="Repository, click Watch settings, action:blob#show">          <span data-menu-button>
+        <summary class="select-menu-button float-left btn btn-sm btn-with-count" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;WATCH_BUTTON&quot;,&quot;repository_id&quot;:109787945,&quot;client_id&quot;:&quot;1170404473.1543760810&quot;,&quot;originating_request_id&quot;:&quot;796D:7879:7D2EF4:B2EF59:5D78C0B3&quot;,&quot;originating_url&quot;:&quot;https://github.com/jenkins-docs/creating-a-pipeline-in-blue-ocean/blob/master/jenkins/scripts/test.sh&quot;,&quot;referrer&quot;:&quot;https://github.com/jenkins-docs/creating-a-pipeline-in-blue-ocean/tree/master/jenkins/scripts&quot;,&quot;user_id&quot;:907310}}" data-hydro-click-hmac="c9a26672b6ffe49c73f029cf2d539be7f73f70f198bfb82c59038afa620cc217" data-ga-click="Repository, click Watch settings, action:blob#show">          <span data-menu-button>
               <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
               Watch
           </span>
@@ -755,18 +755,18 @@
 
   <li>
       <div class="js-toggler-container js-social-container starring-container ">
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" action="/jenkins-docs/creating-a-pipeline-in-blue-ocean/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="7G5v7TL2Yd3tbPNFO61sSlbluW29x1EjfltHxSXwVTSo3C02DCS8BuJOjC965fWb84e2gvk4gK6XguoKe8urBQ==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" action="/jenkins-docs/creating-a-pipeline-in-blue-ocean/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="mAsVXfWTdMYznD5fD95YhS0N3P3jXTWvR1mKi2je3KfcuVeGy0GpHTy+QTVOlsFUiG/TEqei5CKugCdENuUilg==" />
       <input type="hidden" name="context" value="repository"></input>
-      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Unstar jenkins-docs/creating-a-pipeline-in-blue-ocean" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;UNSTAR_BUTTON&quot;,&quot;repository_id&quot;:109787945,&quot;client_id&quot;:&quot;1170404473.1543760810&quot;,&quot;originating_request_id&quot;:&quot;796D:7879:7D3390:B2F6A8:5D78C0C3&quot;,&quot;originating_url&quot;:&quot;https://github.com/jenkins-docs/creating-a-pipeline-in-blue-ocean/blob/master/jenkins/scripts/deliver.sh&quot;,&quot;referrer&quot;:&quot;https://github.com/jenkins-docs/creating-a-pipeline-in-blue-ocean/tree/master/jenkins/scripts&quot;,&quot;user_id&quot;:907310}}" data-hydro-click-hmac="cec593b6813294c3720ecb6c478626fdb015a821a3e03c836832cf902a6a2a15" data-ga-click="Repository, click unstar button, action:blob#show; text:Unstar">        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Unstar jenkins-docs/creating-a-pipeline-in-blue-ocean" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;UNSTAR_BUTTON&quot;,&quot;repository_id&quot;:109787945,&quot;client_id&quot;:&quot;1170404473.1543760810&quot;,&quot;originating_request_id&quot;:&quot;796D:7879:7D2EF4:B2EF59:5D78C0B3&quot;,&quot;originating_url&quot;:&quot;https://github.com/jenkins-docs/creating-a-pipeline-in-blue-ocean/blob/master/jenkins/scripts/test.sh&quot;,&quot;referrer&quot;:&quot;https://github.com/jenkins-docs/creating-a-pipeline-in-blue-ocean/tree/master/jenkins/scripts&quot;,&quot;user_id&quot;:907310}}" data-hydro-click-hmac="2783dcdabe526830aa8cbb7bcd0832888a8bdd825b07348706414fb1f2aa5f01" data-ga-click="Repository, click unstar button, action:blob#show; text:Unstar">        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
         Unstar
 </button>        <a class="social-count js-social-count" href="/jenkins-docs/creating-a-pipeline-in-blue-ocean/stargazers"
            aria-label="20 users starred this repository">
            20
         </a>
 </form>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" action="/jenkins-docs/creating-a-pipeline-in-blue-ocean/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="BgYHnYNEJ92fvAK2wfObickMJEdmztzFGyZCvq8eVYs6wX3PjTrECvzpUiKVIpqthzXaWAhr+EwEL2EtbMvmJw==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" action="/jenkins-docs/creating-a-pipeline-in-blue-ocean/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="uTtk0VvLyXIfk6VRLq9F6d3FqqLhxuMw5a8izQCkj3KF/B6DVbUqpXzG9cV6fkTNk/xUvY9jx7n6pgFew3E83g==" />
       <input type="hidden" name="context" value="repository"></input>
-      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Star jenkins-docs/creating-a-pipeline-in-blue-ocean" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;STAR_BUTTON&quot;,&quot;repository_id&quot;:109787945,&quot;client_id&quot;:&quot;1170404473.1543760810&quot;,&quot;originating_request_id&quot;:&quot;796D:7879:7D3390:B2F6A8:5D78C0C3&quot;,&quot;originating_url&quot;:&quot;https://github.com/jenkins-docs/creating-a-pipeline-in-blue-ocean/blob/master/jenkins/scripts/deliver.sh&quot;,&quot;referrer&quot;:&quot;https://github.com/jenkins-docs/creating-a-pipeline-in-blue-ocean/tree/master/jenkins/scripts&quot;,&quot;user_id&quot;:907310}}" data-hydro-click-hmac="ebda95ae7e817ea8211ed127600f81cb86eca772d344766b2be76787d87c6b68" data-ga-click="Repository, click star button, action:blob#show; text:Star">        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Star jenkins-docs/creating-a-pipeline-in-blue-ocean" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;STAR_BUTTON&quot;,&quot;repository_id&quot;:109787945,&quot;client_id&quot;:&quot;1170404473.1543760810&quot;,&quot;originating_request_id&quot;:&quot;796D:7879:7D2EF4:B2EF59:5D78C0B3&quot;,&quot;originating_url&quot;:&quot;https://github.com/jenkins-docs/creating-a-pipeline-in-blue-ocean/blob/master/jenkins/scripts/test.sh&quot;,&quot;referrer&quot;:&quot;https://github.com/jenkins-docs/creating-a-pipeline-in-blue-ocean/tree/master/jenkins/scripts&quot;,&quot;user_id&quot;:907310}}" data-hydro-click-hmac="f8c238964e11c1c6e90e1ebe2058a8c6329df331ec6281167e9304987f534e17" data-ga-click="Repository, click star button, action:blob#show; text:Star">        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
         Star
 </button>        <a class="social-count js-social-count" href="/jenkins-docs/creating-a-pipeline-in-blue-ocean/stargazers"
            aria-label="20 users starred this repository">
@@ -777,8 +777,8 @@
   </li>
 
   <li>
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="btn-with-count" action="/jenkins-docs/creating-a-pipeline-in-blue-ocean/fork" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="E5revUoRv0XNeNNEJi+FCC5CohRck1zO4hd0pWlY7CqIm7FdFXHz/H9LwiIqOIxBtUgIf5Il9oAl+K0O12b2Bw==" />
-            <button class="btn btn-sm btn-with-count" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;FORK_BUTTON&quot;,&quot;repository_id&quot;:109787945,&quot;client_id&quot;:&quot;1170404473.1543760810&quot;,&quot;originating_request_id&quot;:&quot;796D:7879:7D3390:B2F6A8:5D78C0C3&quot;,&quot;originating_url&quot;:&quot;https://github.com/jenkins-docs/creating-a-pipeline-in-blue-ocean/blob/master/jenkins/scripts/deliver.sh&quot;,&quot;referrer&quot;:&quot;https://github.com/jenkins-docs/creating-a-pipeline-in-blue-ocean/tree/master/jenkins/scripts&quot;,&quot;user_id&quot;:907310}}" data-hydro-click-hmac="475e4db0300990574ad253c4dd7e7afcb2400829ea76fd78303aabb59e6b83fe" data-ga-click="Repository, show fork modal, action:blob#show; text:Fork" type="submit" title="Fork your own copy of jenkins-docs/creating-a-pipeline-in-blue-ocean to your account" aria-label="Fork your own copy of jenkins-docs/creating-a-pipeline-in-blue-ocean to your account">              <svg class="octicon octicon-repo-forked v-align-text-bottom" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="btn-with-count" action="/jenkins-docs/creating-a-pipeline-in-blue-ocean/fork" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="a8u/P+XzabNogwmiZOCvmHEEtpdCnSd+kpURkeGiFo3wytDfupMlCtqwGMRo96bR6g4c/IwrjTBVesg6X5wMoA==" />
+            <button class="btn btn-sm btn-with-count" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;FORK_BUTTON&quot;,&quot;repository_id&quot;:109787945,&quot;client_id&quot;:&quot;1170404473.1543760810&quot;,&quot;originating_request_id&quot;:&quot;796D:7879:7D2EF4:B2EF59:5D78C0B3&quot;,&quot;originating_url&quot;:&quot;https://github.com/jenkins-docs/creating-a-pipeline-in-blue-ocean/blob/master/jenkins/scripts/test.sh&quot;,&quot;referrer&quot;:&quot;https://github.com/jenkins-docs/creating-a-pipeline-in-blue-ocean/tree/master/jenkins/scripts&quot;,&quot;user_id&quot;:907310}}" data-hydro-click-hmac="924c6156e55265c888c1d19a2992a94e1256ee8ccb65ac6bc59e3cc8f1f16e3b" data-ga-click="Repository, show fork modal, action:blob#show; text:Fork" type="submit" title="Fork your own copy of jenkins-docs/creating-a-pipeline-in-blue-ocean to your account" aria-label="Fork your own copy of jenkins-docs/creating-a-pipeline-in-blue-ocean to your account">              <svg class="octicon octicon-repo-forked v-align-text-bottom" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
               Fork
 </button></form>
     <a href="/jenkins-docs/creating-a-pipeline-in-blue-ocean/network/members" class="social-count"
@@ -915,9 +915,9 @@
   
 
 
-    <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/jenkins-docs/creating-a-pipeline-in-blue-ocean/blob/c36036e408a426c2fe93b8d7b18b747a6b03a4a9/jenkins/scripts/deliver.sh">Permalink</a>
+    <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/jenkins-docs/creating-a-pipeline-in-blue-ocean/blob/c36036e408a426c2fe93b8d7b18b747a6b03a4a9/jenkins/scripts/test.sh">Permalink</a>
 
-    <!-- blob contrib key: blob_contributors:v21:a7fe5a3196b36ca1e9ba67786ac55772 -->
+    <!-- blob contrib key: blob_contributors:v21:eacb8f8e1f39263f580e0dc9d268eb84 -->
       
 
     <div class="d-flex flex-items-start flex-shrink-0 pb-3 flex-column flex-md-row">
@@ -931,7 +931,7 @@
     <span class="css-truncate-target" data-menu-button>master</span>
   </summary>
 
-  <details-menu class="select-menu-modal hx_rsm-modal position-absolute" style="z-index: 99;" src="/jenkins-docs/creating-a-pipeline-in-blue-ocean/ref-list/master/jenkins/scripts/deliver.sh?source_action=show&amp;source_controller=blob" preload>
+  <details-menu class="select-menu-modal hx_rsm-modal position-absolute" style="z-index: 99;" src="/jenkins-docs/creating-a-pipeline-in-blue-ocean/ref-list/master/jenkins/scripts/test.sh?source_action=show&amp;source_controller=blob" preload>
     <include-fragment class="select-menu-loading-overlay anim-pulse">
       <svg height="32" class="octicon octicon-octoface" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M14.7 5.34c.13-.32.55-1.59-.13-3.31 0 0-1.05-.33-3.44 1.3-1-.28-2.07-.32-3.13-.32s-2.13.04-3.13.32c-2.39-1.64-3.44-1.3-3.44-1.3-.68 1.72-.26 2.99-.13 3.31C.49 6.21 0 7.33 0 8.69 0 13.84 3.33 15 7.98 15S16 13.84 16 8.69c0-1.36-.49-2.48-1.3-3.35zM8 14.02c-3.3 0-5.98-.15-5.98-3.35 0-.76.38-1.48 1.02-2.07 1.07-.98 2.9-.46 4.96-.46 2.07 0 3.88-.52 4.96.46.65.59 1.02 1.3 1.02 2.07 0 3.19-2.68 3.35-5.98 3.35zM5.49 9.01c-.66 0-1.2.8-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.54-1.78-1.2-1.78zm5.02 0c-.66 0-1.2.79-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.53-1.78-1.2-1.78z"/></svg>
     </include-fragment>
@@ -945,13 +945,13 @@
                 data-hotkey="t">
             Find file
           </a>
-          <clipboard-copy value="jenkins/scripts/deliver.sh" class="btn btn-sm BtnGroup-item">
+          <clipboard-copy value="jenkins/scripts/test.sh" class="btn btn-sm BtnGroup-item">
             Copy path
           </clipboard-copy>
         </div>
       </span>
       <h2 id="blob-path" class="breadcrumb flex-auto min-width-0 text-normal flex-md-self-center ml-md-2 mr-md-3 my-2 my-md-0">
-        <span class="js-repo-root text-bold"><span class="js-path-segment"><a data-pjax="true" href="/jenkins-docs/creating-a-pipeline-in-blue-ocean"><span>creating-a-pipeline-in-blue-ocean</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="/jenkins-docs/creating-a-pipeline-in-blue-ocean/tree/master/jenkins"><span>jenkins</span></a></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="/jenkins-docs/creating-a-pipeline-in-blue-ocean/tree/master/jenkins/scripts"><span>scripts</span></a></span><span class="separator">/</span><strong class="final-path">deliver.sh</strong>
+        <span class="js-repo-root text-bold"><span class="js-path-segment"><a data-pjax="true" href="/jenkins-docs/creating-a-pipeline-in-blue-ocean"><span>creating-a-pipeline-in-blue-ocean</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="/jenkins-docs/creating-a-pipeline-in-blue-ocean/tree/master/jenkins"><span>jenkins</span></a></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="/jenkins-docs/creating-a-pipeline-in-blue-ocean/tree/master/jenkins/scripts"><span>scripts</span></a></span><span class="separator">/</span><strong class="final-path">test.sh</strong>
       </h2>
 
       <div class="BtnGroup flex-shrink-0 d-none d-md-inline-block">
@@ -961,7 +961,7 @@
               data-hotkey="t">
           Find file
         </a>
-        <clipboard-copy value="jenkins/scripts/deliver.sh" class="btn btn-sm BtnGroup-item">
+        <clipboard-copy value="jenkins/scripts/test.sh" class="btn btn-sm BtnGroup-item">
           Copy path
         </clipboard-copy>
       </div>
@@ -969,45 +969,16 @@
 
 
 
-    
-  <div class="Box Box--condensed d-flex flex-column flex-shrink-0">
-      <div class="Box-body d-flex flex-justify-between bg-blue-light flex-column flex-md-row flex-items-start flex-md-items-center">
-        <span class="pr-md-4 f6">
-          <a rel="contributor" data-skip-pjax="true" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=23667807" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/gilesgas"><img class="avatar" src="https://avatars3.githubusercontent.com/u/23667807?s=40&amp;v=4" width="20" height="20" alt="@gilesgas" /></a>
-          <a class="text-bold link-gray-dark lh-default v-align-middle" rel="contributor" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=23667807" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/gilesgas">gilesgas</a>
-            <span class="lh-default v-align-middle">
-              <a data-pjax="true" title="Correct wording in &#39;deliver.sh&#39;." class="link-gray" href="/jenkins-docs/creating-a-pipeline-in-blue-ocean/commit/5c01fd8b53d55c195529fdd67c25ddb1c59240bb">Correct wording in 'deliver.sh'.</a>
-            </span>
-        </span>
-        <span class="d-inline-block flex-shrink-0 v-align-bottom f6 mt-2 mt-md-0">
-          <a class="pr-2 text-mono link-gray" href="/jenkins-docs/creating-a-pipeline-in-blue-ocean/commit/5c01fd8b53d55c195529fdd67c25ddb1c59240bb" data-pjax>5c01fd8</a>
-          <relative-time datetime="2017-11-13T23:45:08Z">Nov 13, 2017</relative-time>
-        </span>
+    <include-fragment src="/jenkins-docs/creating-a-pipeline-in-blue-ocean/contributors/master/jenkins/scripts/test.sh" class="Box Box--condensed commit-loader">
+      <div class="Box-body bg-blue-light f6">
+        Fetching contributors&hellip;
       </div>
 
-    <div class="Box-body d-flex flex-items-center flex-auto f6 border-bottom-0 flex-wrap" >
-      <details class="details-reset details-overlay details-overlay-dark lh-default text-gray-dark float-left mr-2" id="blob_contributors_box">
-        <summary class="btn-link">
-          <span><strong>1</strong> contributor</span>
-        </summary>
-        <details-dialog
-          class="Box Box--overlay d-flex flex-column anim-fade-in fast"
-          aria-label="Users who have contributed to this file"
-          src="/jenkins-docs/creating-a-pipeline-in-blue-ocean/contributors/master/jenkins/scripts/deliver.sh/list" preload>
-          <div class="Box-header">
-            <button class="Box-btn-octicon btn-octicon float-right" type="button" aria-label="Close dialog" data-close-dialog>
-              <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
-            </button>
-            <h3 class="Box-title">
-              Users who have contributed to this file
-            </h3>
-          </div>
-          <include-fragment class="octocat-spinner my-3" aria-label="Loading..."></include-fragment>
-        </details-dialog>
-      </details>
-    </div>
-  </div>
-
+      <div class="Box-body d-flex flex-items-center" >
+          <img alt="" class="loader-loading mr-2" src="https://github.githubassets.com/images/spinners/octocat-spinner-32-EAF2F5.gif" width="16" height="16" />
+        <span class="text-red h6 loader-error">Cannot retrieve contributors at this time</span>
+      </div>
+</include-fragment>
 
 
 
@@ -1019,35 +990,35 @@
   <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
       <span class="file-mode" title="File mode">executable file</span>
       <span class="file-info-divider"></span>
-      29 lines (25 sloc)
+      21 lines (18 sloc)
       <span class="file-info-divider"></span>
-    1.2 KB
+    1023 Bytes
   </div>
 
   <div class="d-flex py-1 py-md-0 flex-auto flex-order-1 flex-md-order-2 flex-sm-grow-0 flex-justify-between">
 
     <div class="BtnGroup">
-      <a id="raw-url" class="btn btn-sm BtnGroup-item" href="/jenkins-docs/creating-a-pipeline-in-blue-ocean/raw/master/jenkins/scripts/deliver.sh">Raw</a>
-        <a class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b" href="/jenkins-docs/creating-a-pipeline-in-blue-ocean/blame/master/jenkins/scripts/deliver.sh">Blame</a>
-      <a rel="nofollow" class="btn btn-sm BtnGroup-item" href="/jenkins-docs/creating-a-pipeline-in-blue-ocean/commits/master/jenkins/scripts/deliver.sh">History</a>
+      <a id="raw-url" class="btn btn-sm BtnGroup-item" href="/jenkins-docs/creating-a-pipeline-in-blue-ocean/raw/master/jenkins/scripts/test.sh">Raw</a>
+        <a class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b" href="/jenkins-docs/creating-a-pipeline-in-blue-ocean/blame/master/jenkins/scripts/test.sh">Blame</a>
+      <a rel="nofollow" class="btn btn-sm BtnGroup-item" href="/jenkins-docs/creating-a-pipeline-in-blue-ocean/commits/master/jenkins/scripts/test.sh">History</a>
     </div>
 
 
     <div>
             <a class="btn-octicon tooltipped tooltipped-nw"
-               href="x-github-client://openRepo/https://github.com/jenkins-docs/creating-a-pipeline-in-blue-ocean?branch=master&amp;filepath=jenkins%2Fscripts%2Fdeliver.sh"
+               href="x-github-client://openRepo/https://github.com/jenkins-docs/creating-a-pipeline-in-blue-ocean?branch=master&amp;filepath=jenkins%2Fscripts%2Ftest.sh"
                aria-label="Open this file in GitHub Desktop"
                data-ga-click="Repository, open with desktop, type:mac">
                 <svg class="octicon octicon-device-desktop" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M15 2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 9H1V3h14v8z"/></svg>
             </a>
 
-            <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form js-update-url-with-hash" action="/jenkins-docs/creating-a-pipeline-in-blue-ocean/edit/master/jenkins/scripts/deliver.sh" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="mfYKK9ORhV1qvmiGKJZr5U1edfJQOMq0BSJZXGIq6qFktdqkX+Oc0uPtsUII+YBWjdMmwUwGLZcv1WWfqvp99A==" />
+            <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form js-update-url-with-hash" action="/jenkins-docs/creating-a-pipeline-in-blue-ocean/edit/master/jenkins/scripts/test.sh" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="dvg8mcVXamUJ5uawIQkfrB+odCC+xCpo2+1UY6JXoCJmy+gcglSqu4uVw4pXEit8Y90S5pBTIrevT/yF31RcAA==" />
               <button class="btn-octicon tooltipped tooltipped-nw" type="submit"
                 aria-label="Fork this project and edit the file" data-hotkey="e" data-disable-with>
                 <svg class="octicon octicon-pencil" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"/></svg>
               </button>
 </form>
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/jenkins-docs/creating-a-pipeline-in-blue-ocean/delete/master/jenkins/scripts/deliver.sh" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="uqgvp3JnKtUPDEBIZRHxvTlqdojG0J3p5i0FR9SG03uHVc3hBgREqPdHr5MxdHx6NWAApkIZK89ZYD9iGxr9Bg==" />
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/jenkins-docs/creating-a-pipeline-in-blue-ocean/delete/master/jenkins/scripts/test.sh" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="pQWpLgYqoMIgi2SSIaQ4fxx06MFlvISA5Di1QXxXDN0Cb7h1V3F8H7S6jCYn9GRekZsNPN0LaJy7jIuy0qrekw==" />
             <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
               aria-label="Fork this project and delete the file" data-disable-with>
               <svg class="octicon octicon-trashcan" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
@@ -1075,68 +1046,68 @@
       </tr>
       <tr>
         <td id="L3" class="blob-num js-line-number" data-line-number="3"></td>
-        <td id="LC3" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">&#39;</span>The following &quot;npm&quot; command builds your Node.js/React application for<span class="pl-pds">&#39;</span></span></td>
+        <td id="LC3" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">&#39;</span>The following &quot;npm&quot; command (if executed) installs the &quot;cross-env&quot;<span class="pl-pds">&#39;</span></span></td>
       </tr>
       <tr>
         <td id="L4" class="blob-num js-line-number" data-line-number="4"></td>
-        <td id="LC4" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">&#39;</span>production in the local &quot;build&quot; directory (i.e. within the appropriate<span class="pl-pds">&#39;</span></span></td>
+        <td id="LC4" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">&#39;</span>dependency into the local &quot;node_modules&quot; directory, which will ultimately<span class="pl-pds">&#39;</span></span></td>
       </tr>
       <tr>
         <td id="L5" class="blob-num js-line-number" data-line-number="5"></td>
-        <td id="LC5" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">&#39;</span>subdirectory of &quot;/var/jenkins_home/workspace/&quot;), correctly bundles React<span class="pl-pds">&#39;</span></span></td>
+        <td id="LC5" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">&#39;</span>be stored in the Jenkins home directory. As described in<span class="pl-pds">&#39;</span></span></td>
       </tr>
       <tr>
         <td id="L6" class="blob-num js-line-number" data-line-number="6"></td>
-        <td id="LC6" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">&#39;</span>in production mode and optimizes the build for the best performance.<span class="pl-pds">&#39;</span></span></td>
+        <td id="LC6" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">&#39;</span>https://docs.npmjs.com/cli/install, the &quot;--save-dev&quot; flag causes the<span class="pl-pds">&#39;</span></span></td>
       </tr>
       <tr>
         <td id="L7" class="blob-num js-line-number" data-line-number="7"></td>
-        <td id="LC7" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">set</span> -x</td>
+        <td id="LC7" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">&#39;</span>&quot;cross-env&quot; dependency to be installed as &quot;devDependencies&quot;. For the<span class="pl-pds">&#39;</span></span></td>
       </tr>
       <tr>
         <td id="L8" class="blob-num js-line-number" data-line-number="8"></td>
-        <td id="LC8" class="blob-code blob-code-inner js-file-line">npm run build</td>
+        <td id="LC8" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">&#39;</span>purposes of this tutorial, this flag is not important. However, when<span class="pl-pds">&#39;</span></span></td>
       </tr>
       <tr>
         <td id="L9" class="blob-num js-line-number" data-line-number="9"></td>
-        <td id="LC9" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">set</span> +x</td>
+        <td id="LC9" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">&#39;</span>installing this dependency, it would typically be done so using this<span class="pl-pds">&#39;</span></span></td>
       </tr>
       <tr>
         <td id="L10" class="blob-num js-line-number" data-line-number="10"></td>
-        <td id="LC10" class="blob-code blob-code-inner js-file-line">
-</td>
+        <td id="LC10" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">&#39;</span>flag. For a comprehensive explanation about &quot;devDependencies&quot;, see<span class="pl-pds">&#39;</span></span></td>
       </tr>
       <tr>
         <td id="L11" class="blob-num js-line-number" data-line-number="11"></td>
-        <td id="LC11" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">&#39;</span>The following &quot;npm&quot; command runs your Node.js/React application in<span class="pl-pds">&#39;</span></span></td>
+        <td id="LC11" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">&#39;</span>https://stackoverflow.com/questions/18875674/whats-the-difference-between-dependencies-devdependencies-and-peerdependencies.<span class="pl-pds">&#39;</span></span></td>
       </tr>
       <tr>
         <td id="L12" class="blob-num js-line-number" data-line-number="12"></td>
-        <td id="LC12" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">&#39;</span>development mode and makes the application available for web browsing.<span class="pl-pds">&#39;</span></span></td>
+        <td id="LC12" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">set</span> -x</td>
       </tr>
       <tr>
         <td id="L13" class="blob-num js-line-number" data-line-number="13"></td>
-        <td id="LC13" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">&#39;</span>The &quot;npm start&quot; command has a trailing ampersand so that the command runs<span class="pl-pds">&#39;</span></span></td>
+        <td id="LC13" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span> npm install --save-dev cross-env</span></td>
       </tr>
       <tr>
         <td id="L14" class="blob-num js-line-number" data-line-number="14"></td>
-        <td id="LC14" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">&#39;</span>as a background process (i.e. asynchronously). Otherwise, this command<span class="pl-pds">&#39;</span></span></td>
+        <td id="LC14" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">set</span> +x</td>
       </tr>
       <tr>
         <td id="L15" class="blob-num js-line-number" data-line-number="15"></td>
-        <td id="LC15" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">&#39;</span>can pause running builds of CI/CD applications indefinitely. &quot;npm start&quot;<span class="pl-pds">&#39;</span></span></td>
+        <td id="LC15" class="blob-code blob-code-inner js-file-line">
+</td>
       </tr>
       <tr>
         <td id="L16" class="blob-num js-line-number" data-line-number="16"></td>
-        <td id="LC16" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">&#39;</span>is followed by another command that retrieves the process ID (PID) value<span class="pl-pds">&#39;</span></span></td>
+        <td id="LC16" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">&#39;</span>The following &quot;npm&quot; command tests that your simple Node.js/React<span class="pl-pds">&#39;</span></span></td>
       </tr>
       <tr>
         <td id="L17" class="blob-num js-line-number" data-line-number="17"></td>
-        <td id="LC17" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">&#39;</span>of the previously run process (i.e. &quot;npm start&quot;) and writes this value to<span class="pl-pds">&#39;</span></span></td>
+        <td id="LC17" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">&#39;</span>application renders satisfactorily. This command actually invokes the test<span class="pl-pds">&#39;</span></span></td>
       </tr>
       <tr>
         <td id="L18" class="blob-num js-line-number" data-line-number="18"></td>
-        <td id="LC18" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">&#39;</span>the file &quot;.pidfile&quot;.<span class="pl-pds">&#39;</span></span></td>
+        <td id="LC18" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">&#39;</span>runner Jest (https://facebook.github.io/jest/).<span class="pl-pds">&#39;</span></span></td>
       </tr>
       <tr>
         <td id="L19" class="blob-num js-line-number" data-line-number="19"></td>
@@ -1144,40 +1115,7 @@
       </tr>
       <tr>
         <td id="L20" class="blob-num js-line-number" data-line-number="20"></td>
-        <td id="LC20" class="blob-code blob-code-inner js-file-line">npm start <span class="pl-k">&amp;</span></td>
-      </tr>
-      <tr>
-        <td id="L21" class="blob-num js-line-number" data-line-number="21"></td>
-        <td id="LC21" class="blob-code blob-code-inner js-file-line">sleep 1</td>
-      </tr>
-      <tr>
-        <td id="L22" class="blob-num js-line-number" data-line-number="22"></td>
-        <td id="LC22" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">echo</span> <span class="pl-smi">$!</span> <span class="pl-k">&gt;</span> .pidfile</td>
-      </tr>
-      <tr>
-        <td id="L23" class="blob-num js-line-number" data-line-number="23"></td>
-        <td id="LC23" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">set</span> +x</td>
-      </tr>
-      <tr>
-        <td id="L24" class="blob-num js-line-number" data-line-number="24"></td>
-        <td id="LC24" class="blob-code blob-code-inner js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L25" class="blob-num js-line-number" data-line-number="25"></td>
-        <td id="LC25" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">&#39;</span>Now...<span class="pl-pds">&#39;</span></span></td>
-      </tr>
-      <tr>
-        <td id="L26" class="blob-num js-line-number" data-line-number="26"></td>
-        <td id="LC26" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">&#39;</span>Visit http://localhost:3000 to see your Node.js/React application in action.<span class="pl-pds">&#39;</span></span></td>
-      </tr>
-      <tr>
-        <td id="L27" class="blob-num js-line-number" data-line-number="27"></td>
-        <td id="LC27" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">&#39;</span>(This is why you specified the &quot;args <span class="pl-pds">&#39;</span><span class="pl-pds">&#39;</span>-p 3000:3000<span class="pl-pds">&#39;</span><span class="pl-pds">&#39;</span>&quot; parameter when you<span class="pl-pds">&#39;</span></span></td>
-      </tr>
-      <tr>
-        <td id="L28" class="blob-num js-line-number" data-line-number="28"></td>
-        <td id="LC28" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">&#39;</span>created your initial Pipeline as a Jenkinsfile.)<span class="pl-pds">&#39;</span></span></td>
+        <td id="LC20" class="blob-code blob-code-inner js-file-line">npm <span class="pl-c1">test</span></td>
       </tr>
 </table>
 
@@ -1189,7 +1127,7 @@
       <ul class="BlobToolbar-dropdown dropdown-menu dropdown-menu-se mt-2" style="width:185px">
         <li><clipboard-copy role="menuitem" class="dropdown-item" id="js-copy-lines" style="cursor:pointer;" data-original-text="Copy lines">Copy lines</clipboard-copy></li>
         <li><clipboard-copy role="menuitem" class="dropdown-item" id="js-copy-permalink" style="cursor:pointer;" data-original-text="Copy permalink">Copy permalink</clipboard-copy></li>
-        <li><a class="dropdown-item js-update-url-with-hash" id="js-view-git-blame" role="menuitem" href="/jenkins-docs/creating-a-pipeline-in-blue-ocean/blame/c36036e408a426c2fe93b8d7b18b747a6b03a4a9/jenkins/scripts/deliver.sh">View git blame</a></li>
+        <li><a class="dropdown-item js-update-url-with-hash" id="js-view-git-blame" role="menuitem" href="/jenkins-docs/creating-a-pipeline-in-blue-ocean/blame/c36036e408a426c2fe93b8d7b18b747a6b03a4a9/jenkins/scripts/test.sh">View git blame</a></li>
           <li><a class="dropdown-item" id="js-new-issue" role="menuitem" href="/jenkins-docs/creating-a-pipeline-in-blue-ocean/issues/new">Reference in new issue</a></li>
       </ul>
     </details-menu>
@@ -1225,7 +1163,7 @@
 <div class="footer container-lg width-full p-responsive" role="contentinfo">
   <div class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
     <ul class="list-style-none d-flex flex-wrap col-12 col-lg-5 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
-      <li class="mr-3 mr-lg-0">&copy; 2019 <span title="0.71383s from unicorn-59cf448654-8ftvl">GitHub</span>, Inc.</li>
+      <li class="mr-3 mr-lg-0">&copy; 2019 <span title="0.43356s from unicorn-6b9bf967d6-4lxmd">GitHub</span>, Inc.</li>
         <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to terms, text:terms" href="https://github.com/site/terms">Terms</a></li>
         <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to privacy, text:privacy" href="https://github.com/site/privacy">Privacy</a></li>
         <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to security, text:security" href="https://github.com/security">Security</a></li>
